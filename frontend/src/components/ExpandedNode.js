@@ -29,7 +29,7 @@ function ExpandedNode({ modalOnClose, children }) {
     if (currentNode && treeData) {
       setFoundNode(findNode(treeData, currentNode.data.id));
     }
-  }, [currentNode, treeData]);
+  }, [currentNode]);
 
   useEffect(() => {
     if (expandedNode) {

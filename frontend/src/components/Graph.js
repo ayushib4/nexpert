@@ -120,7 +120,7 @@ const Graph = () => {
     };
 
     fetchData();
-  }, [currentNode, setLoading, setTreeData, treeData]);
+  }, [currentNode]);
 
   const onClick = (nodeData) => {
     handleNodeClick(nodeData);
