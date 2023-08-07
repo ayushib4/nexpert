@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { NodeContext } from "../NodeContext.js";
-import { Modal } from "@mui/material";
 import "./styles/ExpandedNode.css";
 import { Close } from "@material-ui/icons";
 

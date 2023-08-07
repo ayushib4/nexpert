@@ -4,7 +4,7 @@ const platform = window.navigator.platform
 
 console.log(platform)
 
-const BASE_URL = platform == 'Win32' ? 'http://127.0.0.1:8000' :'http://0.0.0.0:8000';
+const BASE_URL = platform === 'Win32' ? 'http://127.0.0.1:8000' :'http://0.0.0.0:8000';
 
 const exampleExpandedData = {
   url: "https://arxiv.org/pdf/1810.04805.pdf",
