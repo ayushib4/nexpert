@@ -1,0 +1,34 @@
+.expandedNode {
+  width: 50%;
+  background: #05014a;
+  color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0.5px 0.5px 0.5px rgb(128, 128, 128);
+  top: 50vh;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top: 2rem;
+  left: 25%;
+  position: fixed;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+}
+
+.nodeTag {
+  margin: 1rem;
+  text-align: left;
+}
+
+.noNodeTag {
+  margin: 1rem;
+  text-align: left;
+  font-weight: 300;
+  color: #efefef;
+}

@@ -1,0 +1,27 @@
+I wish to create a tool that helps people explore the content of cutting-edge scientific papers. Please list the key concepts of the below paper. Each key concept should be structured as follows:
+
+{
+
+CONCEPT_NAME: (up to 5 word name of concept),
+
+QUOTE: (a quote about the concept directly from the paper),
+
+LONG_DETAILED_DESCRIPTION: (around 8-12 sentence description of the concept and how it relates to the paper. ensure that this description is long and descriptive. fill it in with information.),
+
+REFERENCES: The reference for this concept as a BIBTEX Citation. <example> Yoshida, K., Nakamura, M., Higashi, N., & Shimizu, H. (2002). EPR in the 21st Century Basics and Applications to Material, Life and Earth Science. Elsevier B.V.</example> Please source these from the list of references in the paper below. Do NOT include the original paper as a reference. Use the related papers instead.
+
+}
+
+Please aim for 8-12 individual key concepts.
+
+<text>
+{{TEXT}}
+</text>
+
+Please put your response in <response></response> XML tags.
+
+
+
+#################################################
+
+

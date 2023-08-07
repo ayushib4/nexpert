@@ -1,0 +1,10 @@
+.spinner {
+  position: absolute;
+  top: 50vh;
+  width: 50vw;
+  background: #282c34;
+  width: 400;
+  outline: none;
+  border: none;
+  pointer-events: none;
+}

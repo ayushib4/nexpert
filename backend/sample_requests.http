@@ -1,0 +1,112 @@
+# GET http://0.0.0.0:8000/retrieve-arxiv-search
+# content-type: application/json
+
+# {
+#     "query": "Language Models and Translation"
+# }
+
+###
+GET http://0.0.0.0:8000/top-paper
+content-type: application/json
+
+{   
+    "userQuery": "Language Models and Translation",
+    "papers":
+    {
+        "papers": [
+            {
+                "url": "http://arxiv.org/pdf/2306.07377v1",
+                "title": "Lost in Translation: Large Language Models in Non-English Content Analysis",
+                "summary": "In recent years, large language models (e.g., Open AI's GPT-4, Meta's LLaMa,\nGoogle's PaLM) have become the dominant approach for building AI systems to\nanalyze and generate language online. However, the automated systems that\nincreasingly mediate our interactions online -- such as chatbots, content\nmoderation systems, and search engines -- are primarily designed for and work\nfar more effectively in English than in the world's other 7,000 languages.\nRecently, researchers and technology companies have attempted to extend the\ncapabilities of large language models into languages other than English by\nbuilding what are called multilingual language models.\n  In this paper, we explain how these multilingual language models work and\nexplore their capabilities and limits. Part I provides a simple technical\nexplanation of how large language models work, why there is a gap in available\ndata between English and other languages, and how multilingual language models\nattempt to bridge that gap. Part II accounts for the challenges of doing\ncontent analysis with large language models in general and multilingual\nlanguage models in particular. Part III offers recommendations for companies,\nresearchers, and policymakers to keep in mind when considering researching,\ndeveloping and deploying large and multilingual language models.",
+                "publishedDate": "2023-06-12 19:10:47+00:00"
+            },
+            {
+                "url": "http://arxiv.org/pdf/2202.03371v1",
+                "title": "Cedille: A large autoregressive French language model",
+                "summary": "Scaling up the size and training of autoregressive language models has\nenabled novel ways of solving Natural Language Processing tasks using zero-shot\nand few-shot learning. While extreme-scale language models such as GPT-3 offer\nmultilingual capabilities, zero-shot learning for languages other than English\nremain largely unexplored. Here, we introduce Cedille, a large open source\nauto-regressive language model, specifically trained for the French language.\nOur results show that Cedille outperforms existing French language models and\nis competitive with GPT-3 on a range of French zero-shot benchmarks.\nFurthermore, we provide an in-depth comparison of the toxicity exhibited by\nthese models, showing that Cedille marks an improvement in language model\nsafety thanks to dataset filtering.",
+                "publishedDate": "2022-02-07 17:40:43+00:00"
+            },
+            {
+                "url": "http://arxiv.org/pdf/2305.06530v1",
+                "title": "How Good are Commercial Large Language Models on African Languages?",
+                "summary": "Recent advancements in Natural Language Processing (NLP) has led to the\nproliferation of large pretrained language models. These models have been shown\nto yield good performance, using in-context learning, even on unseen tasks and\nlanguages. They have also been exposed as commercial APIs as a form of\nlanguage-model-as-a-service, with great adoption. However, their performance on\nAfrican languages is largely unknown. We present a preliminary analysis of\ncommercial large language models on two tasks (machine translation and text\nclassification) across eight African languages, spanning different language\nfamilies and geographical areas. Our results suggest that commercial language\nmodels produce below-par performance on African languages. We also find that\nthey perform better on text classification than machine translation. In\ngeneral, our findings present a call-to-action to ensure African languages are\nwell represented in commercial large language models, given their growing\npopularity.",
+                "publishedDate": "2023-05-11 02:29:53+00:00"
+            },
+            {
+                "url": "http://arxiv.org/pdf/2304.06186v1",
+                "title": "Using large language models for (de-)formalization and natural argumentation exercises for beginner's students",
+                "summary": "We describe two systems that use text-davinci-003, a large language model,\nfor the automatized correction of (i) exercises in translating back and forth\nbetween natural language and the languages of propositional logic and\nfirst-order predicate logic and (ii) exercises in writing simple arguments in\nnatural language in non-mathematical scenarios.",
+                "publishedDate": "2023-04-12 23:05:02+00:00"
+            },
+            {
+                "url": "http://arxiv.org/pdf/2205.07634v1",
+                "title": "A Precis of Language Models are not Models of Language",
+                "summary": "Natural Language Processing is one of the leading application areas in the\ncurrent resurgence of Artificial Intelligence, spearheaded by Artificial Neural\nNetworks. We show that despite their many successes at performing linguistic\ntasks, Large Neural Language Models are ill-suited as comprehensive models of\nnatural language. The wider implication is that, in spite of the often\noverbearing optimism about AI, modern neural models do not represent a\nrevolution in our understanding of cognition.",
+                "publishedDate": "2022-05-16 12:50:58+00:00"
+            },
+            {
+                "url": "http://arxiv.org/pdf/2307.15063v1",
+                "title": "To Adapt or Not to Adapt? Real-Time Adaptation for Semantic Segmentation",
+                "summary": "The goal of Online Domain Adaptation for semantic segmentation is to handle\nunforeseeable domain changes that occur during deployment, like sudden weather\nevents. However, the high computational costs associated with brute-force\nadaptation make this paradigm unfeasible for real-world applications. In this\npaper we propose HAMLET, a Hardware-Aware Modular Least Expensive Training\nframework for real-time domain adaptation. Our approach includes a\nhardware-aware back-propagation orchestration agent (HAMT) and a dedicated\ndomain-shift detector that enables active control over when and how the model\nis adapted (LT). Thanks to these advancements, our approach is capable of\nperforming semantic segmentation while simultaneously adapting at more than\n29FPS on a single consumer-grade GPU. Our framework's encouraging accuracy and\nspeed trade-off is demonstrated on OnDA and SHIFT benchmarks through\nexperimental results.",
+                "publishedDate": "2023-07-27 17:59:59+00:00"
+            },
+            {
+                "url": "http://arxiv.org/pdf/2307.15064v1",
+                "title": "Self-Supervised Visual Acoustic Matching",
+                "summary": "Acoustic matching aims to re-synthesize an audio clip to sound as if it were\nrecorded in a target acoustic environment. Existing methods assume access to\npaired training data, where the audio is observed in both source and target\nenvironments, but this limits the diversity of training data or requires the\nuse of simulated data or heuristics to create paired samples. We propose a\nself-supervised approach to visual acoustic matching where training samples\ninclude only the target scene image and audio -- without acoustically\nmismatched source audio for reference. Our approach jointly learns to\ndisentangle room acoustics and re-synthesize audio into the target environment,\nvia a conditional GAN framework and a novel metric that quantifies the level of\nresidual acoustic information in the de-biased audio. Training with either\nin-the-wild web data or simulated data, we demonstrate it outperforms the\nstate-of-the-art on multiple challenging datasets and a wide variety of\nreal-world audio and environments.",
+                "publishedDate": "2023-07-27 17:59:59+00:00"
+            },
+            {
+                "url": "http://arxiv.org/pdf/2307.15062v1",
+                "title": "Exponential speedups for quantum walks in random hierarchical graphs",
+                "summary": "There are few known exponential speedups for quantum algorithms and these\ntend to fall into even fewer families. One speedup that has mostly resisted\ngeneralization is the use of quantum walks to traverse the welded-tree graph,\ndue to Childs, Cleve, Deotto, Farhi, Gutmann, and Spielman. We show how to\ngeneralize this to a large class of hierarchical graphs in which the vertices\nare grouped into ``supervertices'' which are arranged according to a\n$d$-dimensional lattice. Supervertices can have different sizes, and edges\nbetween supervertices correspond to random connections between their\nconstituent vertices.\n  The hitting times of quantum walks on these graphs are related to the\nlocalization properties of zero modes in certain disordered tight binding\nHamiltonians. The speedups range from superpolynomial to exponential, depending\non the underlying dimension and the random graph model. We also provide\nconcrete realizations of these hierarchical graphs, and introduce a general\nmethod for constructing graphs with efficient quantum traversal times using\ngraph sparsification.",
+                "publishedDate": "2023-07-27 17:59:58+00:00"
+            },
+            {
+                "url": "http://arxiv.org/pdf/2307.15061v1",
+                "title": "The RoboDepth Challenge: Methods and Advancements Towards Robust Depth Estimation",
+                "summary": "Accurate depth estimation under out-of-distribution (OoD) scenarios, such as\nadverse weather conditions, sensor failure, and noise contamination, is\ndesirable for safety-critical applications. Existing depth estimation systems,\nhowever, suffer inevitably from real-world corruptions and perturbations and\nare struggled to provide reliable depth predictions under such cases. In this\npaper, we summarize the winning solutions from the RoboDepth Challenge -- an\nacademic competition designed to facilitate and advance robust OoD depth\nestimation. This challenge was developed based on the newly established KITTI-C\nand NYUDepth2-C benchmarks. We hosted two stand-alone tracks, with an emphasis\non robust self-supervised and robust fully-supervised depth estimation,\nrespectively. Out of more than two hundred participants, nine unique and\ntop-performing solutions have appeared, with novel designs ranging from the\nfollowing aspects: spatial- and frequency-domain augmentations, masked image\nmodeling, image restoration and super-resolution, adversarial training,\ndiffusion-based noise suppression, vision-language pre-training, learned model\nensembling, and hierarchical feature enhancement. Extensive experimental\nanalyses along with insightful observations are drawn to better understand the\nrationale behind each design. We hope this challenge could lay a solid\nfoundation for future research on robust and reliable depth estimation and\nbeyond. The datasets, competition toolkit, workshop recordings, and source code\nfrom the winning teams are publicly available on the challenge website.",
+                "publishedDate": "2023-07-27 17:59:56+00:00"
+            },
+            {
+                "url": "http://arxiv.org/pdf/2307.15060v1",
+                "title": "News from the Swampland -- Constraining string theory with astrophysics and cosmology",
+                "summary": "Our current best guess for a unified theory of gravitation and quantum field\ntheory (string theory) generically predicts a set of requirements for a\nconsistently quantized theory, the Swampland criteria. Refined versions of\nthese criteria have recently been shown to be in mild tension with cosmological\nobservations. We summarize the status of the current impact of and constraints\non the Swampland conjectures from cosmology, and subject a variety of dark\nenergy quintessence models to recently released cosmological datasets. We find\nthat instead of tightening the tension, the new data allows for slightly more\nfreedom in the Swampland criteria. We further demonstrate that if there is no\ntheoretical argument made to prevent interactions of the moduli fields with the\nelectromagnetic sector, a novel fine-tuning argument arises from the extremely\ntight current constraints on such interactions. Finally, we conclude with a\ncautionary tale on model-independent reconstructions of the Swampland criteria\nfrom expansion rate data.",
+                "publishedDate": "2023-07-27 17:59:55+00:00"
+            }
+            
+        ]
+    }
+}
+
+###
+
+POST http://0.0.0.0:8000/expand-graph-with-new-nodes
+content-type: application/json
+
+{
+    "id": "123",
+    "name": "Attention mechanism",
+    "referenceUrl": "http://arxiv.org/pdf/1409.0473v7",
+    "description": "The paper proposes an attention mechanism that allows the decoder to focus on relevant parts of the source sentence when generating each word in the translation. This is more flexible than encoding the full source sentence into a fixed vector."
+}
+
+###
+
+POST http://0.0.0.0:8000/more-info
+content-type: application/json
+
+{
+    "name": "Lost in translation",
+    "referenceUrl": "https://arxiv.org/pdf/2307.12008.pdf",
+    "description": "Interface superconductivity"
+}
+
+###
+
+POST http://0.0.0.0:8000/generate-insights
+Content-type: application/json
+
+{
+    "url": "https://arxiv.org/pdf/2307.12008.pdf"
+}

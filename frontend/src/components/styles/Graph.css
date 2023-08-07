@@ -1,0 +1,43 @@
+.graph {
+  background: #faf9fa;
+  width: 100%;
+}
+
+.rd3t-label {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #282c34;
+  translate: -60px 45px !important;
+  font-size: 13px;
+}
+
+.node__root > circle {
+  fill: rgb(19, 1, 69);
+}
+
+.node__root > circle:hover {
+  transform: scale(1.5);
+}
+
+.node__branch > circle {
+  fill: #758dbe;
+}
+
+.node__branch > circle:hover {
+  transform: scale(1.5);
+}
+
+.node__leaf > circle {
+  fill: rgb(175, 181, 192);
+  /* Let's also make the radius of leaf nodes larger */
+}
+
+.node__leaf > circle:hover {
+  transform: scale(1.5);
+}
+
+.helperText {
+  padding: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
