@@ -1,14 +1,14 @@
 # backend
-.env
-__pycache__/
-env
-venv
-serviceAccountKey.json
+backend/.env
+backend/__pycache__/
+backend/env
+backend/venv
+backend/serviceAccountKey.json
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+frontend/node_modules
+frontend/.pnp
+frontend/.pnp.js
 
 # testing
 /coverage
