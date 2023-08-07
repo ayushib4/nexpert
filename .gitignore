@@ -1,7 +1,10 @@
 # backend
 backend/.env
 backend/__pycache__/
+backend/functions/__pycache__/
 backend/env
+backend/claude_insights_logs.txt
+backend/insight_logs.txt
 backend/venv
 backend/serviceAccountKey.json
 
